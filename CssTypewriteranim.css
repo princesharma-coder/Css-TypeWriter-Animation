@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.child{
+    font-size: 2rem;
+    margin-inline: auto;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid;
+    animation: typing 3s steps(22) forwards ,
+    blink-animation 1s step-end infinite;
+}
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+
+    to{
+        width: 50.2%;
+    }
+}
+
+@keyframes blink-animation{
+    50%{
+        border-color: transparent;
+    }
+}
